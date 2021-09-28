@@ -15,7 +15,7 @@
 </section>
 <section class="flex justify-center">
     <div class="container py-4 flex">
-        PERDU ?
+        PERDU ? Vraiment ?
     </div>
     
 </section>
