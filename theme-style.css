@@ -1,0 +1,147 @@
+@import "node_modules/tailwindcss/base.css";
+@import "node_modules/tailwindcss/components.css";
+@import "node_modules/tailwindcss/utilities.css";
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700;800;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+html {
+    @apply mt-0;
+}
+
+body {
+    @apply font-body;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lien, .lien-titre {
+    position: relative;
+}
+
+.lien:after {
+    background: none repeat 0 0 transparent;
+    bottom: -6px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    @apply bg-rouge;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.lien:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.lien-titre:after {
+    background: none repeat 0 0 transparent;
+    bottom: -16px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    @apply bg-white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.lien-titre:hover:after { 
+    width: 50%; 
+    left: 25%; 
+}
+
+
+.svg-icon-contact path,
+.svg-icon-contact polygon,
+.svg-icon-contact rect {
+    fill: #142144;
+}
+
+.svg-icon-contact circle {
+    stroke: #142144;
+    stroke-width: 1;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #ffffff;
+}
+
+.svg-icon circle {
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+.content-article h2 {
+    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir my-5;
+}
+
+.content-article-aero h2 {
+    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir my-5;
+}
+
+.content-article h3 {
+    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 my-5;
+}
+
+.content-article-aero h3 {
+    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 my-5;
+}
+
+@media (min-width: 1024px) {
+    .content-article-aero h2 {
+        @apply font-title font-bold text-2xl text-left leading-6 text-bleunoir my-5;
+    }  
+
+    .content-article-aero h3 {
+        @apply font-title font-bold text-xl text-left leading-6 text-blue-700 my-5;
+    } 
+
+    .trait-titre:after {
+        background: none repeat 0 0 transparent;
+        bottom: -6px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        @apply bg-rouge;
+        width: 24px; 
+    }
+}
+
+.nav-links {
+    @apply relative z-0 inline-flex rounded-md shadow-sm;
+}
+
+.page-numbers.current {
+    @apply z-10 text-white border-bleunoir bg-bleunoir relative inline-flex items-center px-4 py-2 border text-sm font-extrabold;
+}
+
+.page-numbers {
+    @apply bg-white border-bleunoir text-gray-500 relative inline-flex items-center px-4 py-2 border text-sm font-medium;
+}
+
+.page-numbers:hover {
+    @apply bg-rouge text-white font-extrabold;
+}
