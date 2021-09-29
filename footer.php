@@ -19,7 +19,7 @@
                         </ul>
                         <ul class="flex flex-col lg:flex-wrap gap-2">
                             <li><a href="<?php echo site_url('/partenaires'); ?>">Partenaires</a></li>
-                            <li><a href="<?php echo site_url('/cjm'); ?>">Cercle Jean Mermoz</a></li>
+                            <li><a href="<?php echo site_url('/cercle-jean-mermoz'); ?>">Cercle Jean Mermoz</a></li>
                             <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
                             <ul class="text-white flex justify-center gap-2 mt-5">
                                 <li class="transform hover:scale-125 delay-150 duration-700 ease-in-out ">

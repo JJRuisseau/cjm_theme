@@ -8,9 +8,6 @@ get_header();
         the_post(); 
 
 ?>
-<?php
-    var_dump(get_category_link(get_the_category()));
-?>
 <section class="bg-bleunoir flex justify-center py-24">
     <div class="container px-4 flex flex-col items-center text-white ">
         <h1 class="font-title  font-semibold text-5xl max-w-lg leading-10 text-center"><?php the_title(); ?></h1>

@@ -62,7 +62,7 @@
     <!-- SECTION ARTICLES -->
     <?php
         $homepagePosts = new WP_Query(array(
-            'posts_per_page' => 5
+            'posts_per_page' => 4
         ));
     ?>
 
@@ -73,6 +73,7 @@
                     <a href="<?php echo site_url('/articles'); ?>"><span class="text-rouge trait-titre">Derniers articles</span> du Cercle Jean Mermoz</a></h2>
                 <div class="flex flex-wrap gap-4 mt-16 justify-center ">
                     <?php
+
                     while($homepagePosts->have_posts()) {
                         $homepagePosts->the_post(); 
                         ?>
@@ -105,8 +106,8 @@
                 </svg></a>
             </div>
                 <div class="bg-rouge rounded-xl py-12 px-10 mt-8 mb-8 text-white flex flex-col items-center md:max-w-md transition delay-150 duration-300 ease-in-out transform hover:scale-105">
-                    <a href="<?php echo site_url('/cjm'); ?>" class="transform hover:scale-110 delay-150 duration-700 ease-in-out"><img width="96" height="96" src="<?php echo get_theme_file_uri('images/cercle_jean_mermoz.svg'); ?>"/></a>
-                    <h2 class="font-title font-extrabold text-4xl text-center leading-9 mt-5"><a href="<?php echo site_url('/cjm'); ?>" title="Qui est le Cercle Jean Mermoz">Qui est le Cercle Jean Mermoz ?</a></h2>
+                    <a href="<?php echo site_url('/cercle-jean-mermoz'); ?>" class="transform hover:scale-110 delay-150 duration-700 ease-in-out"><img width="96" height="96" src="<?php echo get_theme_file_uri('images/cercle_jean_mermoz.svg'); ?>"/></a>
+                    <h2 class="font-title font-extrabold text-4xl text-center leading-9 mt-5"><a href="<?php echo site_url('/cercle-jean-mermoz'); ?>" title="Qui est le Cercle Jean Mermoz">Qui est le Cercle Jean Mermoz ?</a></h2>
                     <p class="text-center mt-3">Le cercle Jean Mermoz est un cercle d’étude et de discussion situé à Toulouse. Celui-ci a pour fondement la promotion d’un certain esprit français, alliant liberté de ton et intelligence du style, notamment  par la valorisation d'œuvres, de penseurs et d'écrivains contemporains.</p>
                     <cite class="italic font-light text-center mt-5 mb-5">« Dans la France contemporaine, où l’intelligence est surabondante, c’est le courage qui manque » - Chantal Delsol</cite>
                     <svg class="w-12" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
@@ -221,33 +222,7 @@
                 }
             ?>
             
-            <div class="flex flex-col text-bleunoir mt-16 lg:mt-0 items-center">
-                <h2 class="font-title font-bold text-2xl text-grisnoir text-center leading-6 max-w-sm hover:text-rouge"><a href="<?php echo site_url('/evenements'); ?>">Prochains événements du Cercle Jean Mermoz</a></h2>
-                <?php
-                    while($homepageEvent->have_posts()) {
-                    $homepageEvent->the_post();
-                    $date = get_field('date', false, false);
-                    $eventDate = new DateTime($date);
-                ?>
-                <a href="<?php echo site_url('/evenements'); ?>" title="Tous les événements du Cercle Jean Mermoz">
-                    <div class="rounded-2xl border-2 border-bleunoir flex flex-col justify-center mt-5 pb-8 px-5 max-w-sm lg:max-w-lg items-center lg:flex-row lg:gap-4 transition delay-150 duration-300 ease-in-out transform hover:scale-110">
-                        <div class="rounded-full border-4 border-rouge font-title font-black text-5xl flex flex-col text-center p-8 leading-8  justify-center mt-5"><?php echo $eventDate->format('d'); ?><span class="text-3xl"><?php echo $eventDate->format('M'); ?></span></div>
-                        <div class="flex flex-col text-center items-center lg:text-left">
-                            <h3 class="font-title font-bold text-3xl mt-5 leading-7 "><?php the_title(); ?></h3>
-                            <p class="text-rouge text-lg mt-2 lg:text-left"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /> 
-                            </svg><?php the_field('lieu');?> à <?php the_field('heure');?>h</p>
-                            <p class="mt-2 lg:text-left"><?php the_content(); ?></p>
-                        </div>
-                    </div>
-                    </a>
-                <?php
-                    }
-                ?>
-                <a href="<?php echo site_url('/evenements'); ?>" class="bg-bleunoir p-5 text-white rounded-md mt-8 max-w-sm transition delay-150 duration-300 ease-in-out transform hover:scale-110 hover:bg-rouge" title="Consulter tous les événements du Cercle Jean Mermoz">Consulter tous les événements du Cercle Jean Mermoz <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg></a>
-            </div>
+            
         </div>
     </section>
 
@@ -297,7 +272,7 @@
         <div class="container pt-32 px-4 flex flex-col items-center lg:flex-row lg:justify-around lg:gap-6">
             <div class="bg-rouge rounded-2xl text-white flex flex-col items-center text-center px-4 pb-8 max-w-xl lg:px-16 transition delay-150 duration-300 ease-in-out transform hover:scale-110">
                 <img class="-mt-16" width="133" height="133" src="<?php echo get_theme_file_uri('images/cercle_jean_mermoz.svg'); ?>" />
-                <h2 class="font-title font-extrabold text-4xl mt-8 leading-10"><a href="<?php echo site_url('/cjm'); ?>">Vous aussi vous souhaitez contribuer, aider, participer au Cercle Jean Mermoz ?</a></h2>
+                <h2 class="font-title font-extrabold text-4xl mt-8 leading-10"><a href="<?php echo site_url('/cercle-jean-mermoz'); ?>">Vous aussi vous souhaitez contribuer, aider, participer au Cercle Jean Mermoz ?</a></h2>
                 <p class="mt-5 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet posuere diam. Proin ut sem aliquet eros blandit egestas nec vitae justo. Sed vitae molestie magna.</p>
                 <a href="<?php echo site_url('/cjm'); ?>" class="text-grisnoir font-extrabold font-title text-3xl bg-white max-w-lg max-auto py-3 px-6 rounded-lg">Contact <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-grisnoir inline" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
                     </svg>

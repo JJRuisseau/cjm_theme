@@ -18,7 +18,7 @@
     </div>
 </section>
 <section class="flex flex-col items-center">
-    <div class="container flex flex-col px-4 text-md text-center py-8 content-article max-w-screen-md">
+    <div class="container flex flex-col px-4 text-md py-8 content-article max-w-screen-lg">
         <?php the_content(); ?>
     </div>
     <div class="container px-4 flex flex-col items-center max-w-2xl">

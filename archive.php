@@ -6,7 +6,7 @@
 if(is_author()) {
     $author = get_the_author();
     pageBanner(array(
-        'title' => 'Contributions du Camarade ' . $author
+        'title' => 'Contributions '
     ));
 } else {
     pageBanner(array(
@@ -28,6 +28,7 @@ if(is_author()) {
 
     </div>
 </section>
+<?php if(have_posts()) { ?>
 <section class="mt-16 flex flex-col items-center justify-center">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">Les articles</h2>
@@ -64,6 +65,13 @@ if(is_author()) {
         <?php echo the_posts_pagination(); ?>
     </div>
 </section>
+<?php } ?>
+<?php
+        $homepageAero = new WP_Query(array(
+            'posts_per_page' => -1,
+            'post_type' => 'aeropostales',
+        ));
+        //A FAIRE => if($homepageAero) { ?>
 <section class="flex flex-col items-center justify-center mt-16">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">L'aéropostale des lettres</h2>
@@ -71,10 +79,7 @@ if(is_author()) {
     <div class="container pt-8 pb-16 flex flex-col items-center px-4">
         <div class="flex flex-wrap justify-center gap-8">
             <?php
-                $homepageAero = new WP_Query(array(
-                    'posts_per_page' => -1,
-                    'post_type' => 'aeropostales',
-                ));
+                
                 while($homepageAero->have_posts()) { 
                     $homepageAero->the_post(); 
             ?> 
@@ -107,6 +112,7 @@ if(is_author()) {
         </div>
     </div>
 </section>
+<?php } ?>
 <?php
         if(is_category()) { ?>
 <section class="flex flex-col items-center justify-center mt-16">

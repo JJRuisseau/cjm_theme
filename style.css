@@ -96181,7 +96181,6 @@ body {
   color: #142144;
   color: rgba(20, 33, 68, var(--text-opacity));
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .content-article-aero h2 {
@@ -96194,7 +96193,6 @@ body {
   color: #142144;
   color: rgba(20, 33, 68, var(--text-opacity));
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .content-article h3 {
@@ -96207,7 +96205,6 @@ body {
   color: #2b6cb0;
   color: rgba(43, 108, 176, var(--text-opacity));
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .content-article-aero h3 {
@@ -96220,7 +96217,6 @@ body {
   color: #2b6cb0;
   color: rgba(43, 108, 176, var(--text-opacity));
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -96234,7 +96230,6 @@ body {
     color: #142144;
     color: rgba(20, 33, 68, var(--text-opacity));
     margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
   }
 
   .content-article-aero h3 {
@@ -96247,7 +96242,30 @@ body {
     color: #2b6cb0;
     color: rgba(43, 108, 176, var(--text-opacity));
     margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+  }
+
+  .content-article h2 {
+    font-family: Martel Sans;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5rem;
+    --text-opacity: 1;
+    color: #142144;
+    color: rgba(20, 33, 68, var(--text-opacity));
+    margin-top: 1.25rem;
+  }
+
+  .content-article h3 {
+    font-family: Martel Sans;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    --text-opacity: 1;
+    color: #2b6cb0;
+    color: rgba(43, 108, 176, var(--text-opacity));
+    margin-top: 1.25rem;
   }
 
   .trait-titre:after {
@@ -96263,6 +96281,53 @@ body {
     background-color: rgba(230, 35, 43, var(--bg-opacity));
     width: 24px;
   }
+}
+
+.content-article a {
+  --text-opacity: 1;
+  color: #63b3ed;
+  color: rgba(99, 179, 237, var(--text-opacity));
+}
+
+.content-article p {
+  margin-top: 0.75rem;
+}
+
+.content-article li {
+  list-style-position: inside;
+}
+
+.content-article ul {
+  margin-top: 0.5rem;
+  text-indent: 5%;
+}
+
+.content-article ul li {
+  list-style-type: disc;
+}
+
+.content-article ul ul {
+  text-indent: 10%;
+}
+
+.content-article ul ul li {
+  list-style-type: circle;
+}
+
+.content-article ul ul ul {
+  text-indent: 15%;
+}
+
+.content-article ul ul ul li {
+  list-style-type: square;
+}
+
+.content-article ul ul ul {
+  text-indent: 20%;
+}
+
+.content-article a:hover {
+  text-decoration: underline
 }
 
 .nav-links {

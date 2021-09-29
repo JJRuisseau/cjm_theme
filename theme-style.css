@@ -93,29 +93,37 @@ body {
 }
 
 .content-article h2 {
-    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir my-5;
+    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir mt-5;
 }
 
 .content-article-aero h2 {
-    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir my-5;
+    @apply font-title font-bold text-2xl text-center leading-6 text-bleunoir mt-5;
 }
 
 .content-article h3 {
-    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 my-5;
+    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 mt-5;
 }
 
 .content-article-aero h3 {
-    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 my-5;
+    @apply font-title font-bold text-xl text-center leading-6 text-blue-700 mt-5;
 }
 
 @media (min-width: 1024px) {
     .content-article-aero h2 {
-        @apply font-title font-bold text-2xl text-left leading-6 text-bleunoir my-5;
+        @apply font-title font-bold text-2xl text-left leading-6 text-bleunoir mt-5;
     }  
 
     .content-article-aero h3 {
-        @apply font-title font-bold text-xl text-left leading-6 text-blue-700 my-5;
+        @apply font-title font-bold text-xl text-left leading-6 text-blue-700 mt-5;
     } 
+
+    .content-article h2 {
+        @apply font-title font-bold text-2xl text-left leading-6 text-bleunoir mt-5;
+    }
+
+    .content-article h3 {
+        @apply font-title font-bold text-xl text-left leading-6 text-blue-700 mt-5;
+    }
 
     .trait-titre:after {
         background: none repeat 0 0 transparent;
@@ -128,6 +136,51 @@ body {
         @apply bg-rouge;
         width: 24px; 
     }
+}
+
+.content-article a {
+    @apply text-blue-400;
+}
+
+.content-article p {
+    @apply mt-3;
+}
+
+.content-article li {
+    list-style-position: inside;
+}
+
+.content-article ul {
+    @apply mt-2;
+    text-indent: 5%;
+}
+
+.content-article ul li {
+    list-style-type: disc;
+}
+
+.content-article ul ul {
+    text-indent: 10%;
+}
+
+.content-article ul ul li {
+    list-style-type: circle;
+}
+
+.content-article ul ul ul {
+    text-indent: 15%;
+}
+
+.content-article ul ul ul li {
+    list-style-type: square;
+}
+
+.content-article ul ul ul {
+    text-indent: 20%;
+}
+
+.content-article a:hover {
+    text-decoration: underline
 }
 
 .nav-links {
