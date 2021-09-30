@@ -12,7 +12,6 @@ if(is_author()) {
     pageBanner(array(
         'title' => get_the_archive_title()
     ));
-    
 }
 
 ?>
@@ -70,8 +69,10 @@ if(is_author()) {
         $homepageAero = new WP_Query(array(
             'posts_per_page' => -1,
             'post_type' => 'aeropostales',
+            'cat' => get_query_var('cat'),
+            'author' => get_query_var('author')
         ));
-        //A FAIRE => if($homepageAero) { ?>
+        if($homepageAero) { ?>
 <section class="flex flex-col items-center justify-center mt-16">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">L'aéropostale des lettres</h2>
@@ -114,7 +115,13 @@ if(is_author()) {
 </section>
 <?php } ?>
 <?php
-        if(is_category()) { ?>
+        $homepageEntretien = new WP_Query(array(
+            'posts_per_page' => -1,
+            'post_type' => 'entretiens',
+            'cat' => get_query_var('cat'),
+            'author' => get_query_var('author')
+        ));
+        if($homepageEntretien) { ?>
 <section class="flex flex-col items-center justify-center mt-16">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">Les entretiens</h2>
@@ -122,10 +129,6 @@ if(is_author()) {
     <div class="container pt-8 pb-16 flex flex-col items-center px-4">
         <div class="flex flex-wrap justify-center gap-8">
             <?php
-                $homepageEntretien = new WP_Query(array(
-                    'posts_per_page' => -1,
-                    'post_type' => 'entretiens',
-                ));
                 while($homepageEntretien->have_posts()) { 
                     $homepageEntretien->the_post(); 
             ?> 

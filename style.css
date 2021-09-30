@@ -96105,7 +96105,7 @@ body {
   height: 100%;
 }
 
-.lien, .lien-titre {
+.lien, .lien-titre, .lien-footer {
   position: relative;
 }
 
@@ -96145,6 +96145,26 @@ body {
 }
 
 .lien-titre:hover:after {
+  width: 50%;
+  left: 25%;
+}
+
+.lien-footer:after {
+  background: none repeat 0 0 transparent;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.lien-footer:hover:after {
   width: 50%;
   left: 25%;
 }

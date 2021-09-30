@@ -12,7 +12,7 @@
         <?php
         while(have_posts()) {
             the_post(); ?>
-                <div class="rounded-xl flex flex-col items-center py-8 px-10 mb-5 text-center text-white relative h-2/5 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 box-border transition delay-150 duration-300 ease-in-out transform hover:scale-105"> 
+                <div class="rounded-xl flex flex-col items-center py-8 px-10 mb-5 text-center text-white relative h-2/5 sm:w-1/2 md:w-1/3 lg:w-1/4 box-border transition delay-150 duration-300 ease-in-out transform hover:scale-105"> 
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                         <div style="
                             border-radius: 0.75rem;

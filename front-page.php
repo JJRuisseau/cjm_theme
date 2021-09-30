@@ -71,14 +71,14 @@
             <div class="flex flex-col mt-8 relative">
                 <h2 class="font-title font-bold text-2xl text-center leading-6 lg:text-left relative">
                     <a href="<?php echo site_url('/articles'); ?>"><span class="text-rouge trait-titre">Derniers articles</span> du Cercle Jean Mermoz</a></h2>
-                <div class="flex flex-wrap gap-4 mt-16 justify-center ">
+                <div class="flex flex-wrap gap-4 mt-16 justify-center border-rouge border-2">
                     <?php
 
                     while($homepagePosts->have_posts()) {
                         $homepagePosts->the_post(); 
                         ?>
-                        <!-- h-48 w-80 box-content -->
-                        <div class="rounded-xl flex flex-col items-center py-8 px-10 mb-5 text-center text-white relative h-2/5 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 box-border transition delay-150 duration-300 ease-in-out transform hover:scale-105"> 
+                        
+                        <div class="rounded-xl flex flex-col items-center py-8 px-10 mb-5 text-center text-white relative h-2/5 sm:w-1/2 xl:w-1/3 box-border transition delay-150 duration-300 ease-in-out transform hover:scale-105"> 
                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                 <div style="
                                     border-radius: 0.75rem;
