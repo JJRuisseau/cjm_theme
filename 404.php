@@ -14,8 +14,15 @@
     </div>
 </section>
 <section class="flex justify-center">
-    <div class="container py-4 flex">
-        PERDU ? Vraiment ? 2
+    <div class="container py-4 flex flex-col items-center">
+        <img class="w-24" src="<?php echo get_theme_file_uri('images/mermoz_erreur.png'); ?>" alt="erreur_mermoz"/>
+        <div class="border-2 border-gray-300 rounded-xl p-5 bg-gray-100 shadow-md">
+            <p class="font-semibold">Erreur « Croix du Sud »</p>
+            <p>Position : 11°08 Nord, 22°40 Ouest </p>
+            <p>24e traversée de l'Atlantique</p>
+            <p>7 décembre 1936</p>
+        </div>
+        <a class="text-bleunoir hover:text-rouge mt-6" href="<?php echo site_url(); ?>" title="Revenir à la page principale">Revenir à la page principale</a>
     </div>
     
 </section>

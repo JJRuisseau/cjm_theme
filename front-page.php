@@ -71,7 +71,7 @@
             <div class="flex flex-col mt-8 relative">
                 <h2 class="font-title font-bold text-2xl text-center leading-6 lg:text-left relative">
                     <a href="<?php echo site_url('/articles'); ?>"><span class="text-rouge trait-titre">Derniers articles</span> du Cercle Jean Mermoz</a></h2>
-                <div class="flex flex-wrap gap-4 mt-16 justify-center border-rouge border-2">
+                <div class="flex flex-wrap gap-4 mt-16 justify-center">
                     <?php
 
                     while($homepagePosts->have_posts()) {

@@ -72,7 +72,7 @@ if(is_author()) {
             'cat' => get_query_var('cat'),
             'author' => get_query_var('author')
         ));
-        if($homepageAero) { ?>
+        if($homepageAero->have_posts()) { ?>
 <section class="flex flex-col items-center justify-center mt-16">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">L'aéropostale des lettres</h2>
@@ -121,7 +121,7 @@ if(is_author()) {
             'cat' => get_query_var('cat'),
             'author' => get_query_var('author')
         ));
-        if($homepageEntretien) { ?>
+        if($homepageEntretien->have_posts()) { ?>
 <section class="flex flex-col items-center justify-center mt-16">
     <div class="flex flex-col items-center">
         <h2 class="font-title font-bold text-bleunoir text-2xl text-grisnoir text-center leading-6">Les entretiens</h2>

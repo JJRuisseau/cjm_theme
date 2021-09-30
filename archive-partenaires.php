@@ -11,7 +11,7 @@
                 the_post(); 
                 $url = get_field('url');
             ?>
-            <a href="<?php echo $url; ?>" class="flex flex-col items-center transition delay-150 duration-300 ease-in-out transform hover:scale-105">
+            <a href="<?php echo $url; ?>" target="_blank" class="flex flex-col items-center transition delay-150 duration-300 ease-in-out transform hover:scale-105">
                     <?php 
                         $image = get_field('logo');
                         if( !empty( $image ) ): ?>
