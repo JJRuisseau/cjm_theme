@@ -20,7 +20,6 @@
             <p class="font-semibold">Erreur « Croix du Sud »</p>
             <p>Position : 11°08 Nord, 22°40 Ouest </p>
             <p>24e traversée de l'Atlantique</p>
-            <p>TEST</p>
             <p>7 décembre 1936</p>
         </div>
         <a class="text-bleunoir hover:text-rouge mt-6" href="<?php echo site_url(); ?>" title="Revenir à la page principale">Revenir à la page principale</a>
