@@ -23,7 +23,8 @@
     <div class="z-20 bg-grisnoir rounded-3xl text-white -mt-10 py-3 px-8 flex flex-col lg:flex-row text-center items-center gap-4 w-8/12 md:w-1/3 md:justify-around">
         <p><?php the_time('j F Y'); ?>
         
-        <p class="bg-rouge text-sm opacity-60 py-2 px-5 rounded-lg max-w-xs mt-3 lg:mt-0"><?php echo get_the_category_list(', '); ?></p>
+        <p class="bg-rouge text-sm opacity-60 py-2 px-5 rounded-lg max-w-xs mt-3 lg:mt-0">
+            <?php echo get_the_category_list(', '); ?></p>
     </div>
 </section>
 <section class="flex justify-center">

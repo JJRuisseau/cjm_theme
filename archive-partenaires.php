@@ -11,14 +11,14 @@
                 the_post(); 
                 $url = get_field('url');
             ?>
-            <a href="<?php echo $url; ?>" target="_blank" class="flex flex-col items-center max-w-xs transition delay-150 duration-300 ease-in-out transform hover:scale-105" title="<?php the_title(); ?>">
+            <a href="<?php echo $url; ?>" target="_blank" class="flex flex-col items-center max-w-xs transition delay-150 duration-300 ease-in-out transform hover:scale-105 text-center" title="<?php the_title(); ?>">
                     <?php 
                         $image = get_field('logo');
                         if( !empty( $image ) ): ?>
                             <img class="border-2 border-bleunoir rounded-full w-32 shadow-lg" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
 
-                    <h2 class="font-title font-bold text-2xl mt-5 leading-7 text-center mt-5 hover:text-rouge"><?php the_title(); ?></h2>
+                    <h2 class="font-title w-32 font-bold text-2xl mt-5 leading-7 text-center hover:text-rouge"><?php the_title(); ?></h2>
             </a>
             <?php
                 }

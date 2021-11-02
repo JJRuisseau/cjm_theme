@@ -21,10 +21,15 @@
     <div class="container flex flex-col px-4 text-md py-8  content-article max-w-screen-md">
         <?php the_content(); ?>
     </div>
-    <div class="container px-4 flex flex-col items-center max-w-2xl">
+    <div class="container px-4 flex flex-col items-center max-w-3xl content-article">
         <div class="embed-container">
             <?php 
                 the_field('video');
+            ?>
+        </div>
+        <div class="mt-10 text-left">
+            <?php 
+                the_field('sources');
             ?>
         </div>
     </div>
