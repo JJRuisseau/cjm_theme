@@ -10,7 +10,7 @@ get_header();
 ?>
 <section class="bg-bleunoir flex justify-center py-24">
     <div class="container px-4 flex flex-col items-center text-white ">
-        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-10 text-center"><?php the_title(); ?></h1>
+        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-none text-center"><?php the_title(); ?></h1>
         <a href="<?php echo site_url('/aeropostales'); ?>" class="font-semibold text-center mt-10 lien-titre">L'aéropostale des lettres</a>
     </div>
 </section>
@@ -66,7 +66,7 @@ get_header();
             <?php } ?>
         </div>
         <div class="flex justify-center mt-8 lg:mt-0">
-            <div class="text-md text-center content-article-aero max-w-screen-lg lg:text-left">
+            <div class="text-md text-justify content-article-aero max-w-screen-lg lg:text-left">
                 <?php the_content(); ?>
             </div>
         </div>

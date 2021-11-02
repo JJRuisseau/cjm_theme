@@ -3,7 +3,7 @@
 ?>
 <section class="bg-bleunoir flex justify-center py-24">
     <div class="container px-4 flex flex-col items-center text-white ">
-        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-10 text-center lien-titre"><?php the_title(); ?></h1>
+        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-none text-center lien-titre"><?php the_title(); ?></h1>
     </div>
 </section>
 <section class="flex justify-center">
@@ -14,7 +14,7 @@
     </div>
 </section>
 <section class="flex justify-center">
-    <div class="container py-4 flex">
+    <div class="container py-4 content-article">
         <?php the_content() ?>
     </div>
     

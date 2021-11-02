@@ -108,8 +108,8 @@
                 <div class="bg-rouge rounded-xl py-12 px-10 mt-8 mb-8 text-white flex flex-col items-center md:max-w-md transition delay-150 duration-300 ease-in-out transform hover:scale-105">
                     <a href="<?php echo site_url('/cercle-jean-mermoz'); ?>" class="transform hover:scale-110 delay-150 duration-700 ease-in-out"><img width="96" height="96" src="<?php echo get_theme_file_uri('images/cercle_jean_mermoz.svg'); ?>"/></a>
                     <h2 class="font-title font-extrabold text-4xl text-center leading-9 mt-5"><a href="<?php echo site_url('/cercle-jean-mermoz'); ?>" title="Qui est le Cercle Jean Mermoz">Qui est le Cercle Jean Mermoz ?</a></h2>
-                    <p class="text-center mt-3">Le cercle Jean Mermoz est un cercle d’étude et de discussion situé à Toulouse. Celui-ci a pour fondement la promotion d’un certain esprit français, alliant liberté de ton et intelligence du style, notamment  par la valorisation d'œuvres, de penseurs et d'écrivains contemporains.</p>
-                    <cite class="italic font-light text-center mt-5 mb-5">« Dans la France contemporaine, où l’intelligence est surabondante, c’est le courage qui manque » - Chantal Delsol</cite>
+                    <p class="text-center mt-3">Né de la concorde entre joyeux camarades de combat, le Cercle Jean Mermoz est avant tout un creuset, où se fondent les pensées et les analyses de nos glorieux compagnons de route. Loin des autoroutes de la pensée pavlovienne et automatique, nous bourlinguons sur le sentier d’une souveraine pensée française — libre et dansante, poétique et politique. </p>
+                    <cite class="italic font-light text-center mt-5 mb-5">« Vivre, c’est s’embarquer sans savoir où l’on va. Il faudra, pour reconnaître les illusions d'aujourd'hui, écouter les leçons tirées par ceux qui nous suivent. L’histoire ne livre ses clés que dans l’après-coup. » - Pierre Legendre</cite>
                     <svg class="w-12" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
                 </div>
             
@@ -272,9 +272,8 @@
         <div class="container pt-32 px-4 flex flex-col items-center lg:flex-row lg:justify-around lg:gap-6">
             <div class="bg-rouge rounded-2xl text-white flex flex-col items-center text-center px-4 pb-8 max-w-xl lg:px-16 transition delay-150 duration-300 ease-in-out transform hover:scale-110">
                 <img class="-mt-16" width="133" height="133" src="<?php echo get_theme_file_uri('images/cercle_jean_mermoz.svg'); ?>" />
-                <h2 class="font-title font-extrabold text-4xl mt-8 leading-10"><a href="<?php echo site_url('/cercle-jean-mermoz'); ?>">Vous aussi vous souhaitez contribuer, aider, participer au Cercle Jean Mermoz ?</a></h2>
-                <p class="mt-5 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet posuere diam. Proin ut sem aliquet eros blandit egestas nec vitae justo. Sed vitae molestie magna.</p>
-                <a href="<?php echo site_url('/cjm'); ?>" class="text-grisnoir font-extrabold font-title text-3xl bg-white max-w-lg max-auto py-3 px-6 rounded-lg">Contact <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-grisnoir inline" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                <h2 class="font-title font-extrabold text-3xl mt-8 leading-none"><a href="<?php echo site_url('/contact'); ?>">Vous aussi vous souhaitez contribuer, aider, participer au Cercle Jean Mermoz ?</a></h2>
+                <a href="<?php echo site_url('/contact'); ?>" class="text-grisnoir font-extrabold font-title text-3xl bg-white max-w-lg max-auto py-3 px-6 rounded-lg mt-8">Contact <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-grisnoir inline" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
                     </svg>
                 </a>
             </div>

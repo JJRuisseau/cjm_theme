@@ -96311,6 +96311,7 @@ body {
 
 .content-article p {
   margin-top: 0.75rem;
+  text-align: justify;
 }
 
 .content-article li {
@@ -96411,4 +96412,13 @@ body {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   font-weight: 800;
+}
+
+.alignleft { float:left; margin-right: 15px;
+}
+
+.alignright { float:right; margin-left: 15px;
+}
+
+.aligncenter { display: block; margin: auto;
 }

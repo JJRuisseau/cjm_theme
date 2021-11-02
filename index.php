@@ -4,7 +4,7 @@
 
 <section class="bg-bleunoir flex justify-center py-24">
     <div class="container px-4 flex justify-center">
-        <h1 class="font-title text-white font-semibold text-5xl max-w-lg leading-10 text-center lien-titre">Les articles du Cercle Jean Mermoz</h1>
+        <h1 class="font-title text-white font-semibold text-5xl max-w-lg leading-none text-center lien-titre">Les articles du Cercle Jean Mermoz</h1>
     </div>
 </section>
 <section class="mt-16 flex flex-col items-center justify-center">

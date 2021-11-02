@@ -7,7 +7,7 @@
     </div>
 </section>
 <section class="flex justify-center mt-10">
-    <div class="container py-4 flex-col items-center">
+    <div class="container py-4 flex-col items-center max-w-2xl text-justify">
         <?php the_content(); ?>
     </div>
 </section>

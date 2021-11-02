@@ -27,7 +27,7 @@ function pageBanner($args = NULL) {
     ?>
     
     <section class="bg-bleunoir flex justify-center py-24">
-        <h1 class="font-title text-white font-semibold text-5xl max-w-sm leading-10 text-center lien-titre"><?php echo $args['title']; ?></h1>
+        <h1 class="font-title text-white font-semibold text-5xl max-w-sm leading-none text-center lien-titre"><?php echo $args['title']; ?></h1>
     </section>
 
     <?php

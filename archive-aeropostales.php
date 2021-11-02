@@ -3,7 +3,7 @@
 ?>
 
 <section class="bg-bleunoir flex justify-center py-24">
-    <h1 class="font-title text-white font-semibold text-5xl max-w-md leading-10 text-center lien-titre">L'aéropostale des lettres</h1>
+    <h1 class="font-title text-white font-semibold text-5xl max-w-md leading-none text-center lien-titre">L'Aéropostale des lettres</h1>
 </section>
 
 <section class="flex justify-center">

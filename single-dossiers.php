@@ -7,7 +7,7 @@
 ?>
 <section class="bg-bleunoir flex justify-center py-24">
     <div class="container px-4 flex flex-col items-center text-white ">
-        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-10 text-center"><?php the_title(); ?></h1>
+        <h1 class="font-title  font-semibold text-5xl max-w-lg leading-none text-center"><?php the_title(); ?></h1>
         <a href="<?php echo site_url('/dossiers'); ?>" class="font-semibold text-center mt-10 lien-titre">Dossiers</a>
     </div>
 </section>
@@ -18,7 +18,7 @@
     </div>
 </section>
 <section class="flex flex-col items-center">
-    <div class="container flex flex-col px-4 text-md py-8 content-article max-w-screen-lg">
+    <div class="container flex flex-col px-4 text-md py-8  content-article max-w-screen-md">
         <?php the_content(); ?>
     </div>
     <div class="container px-4 flex flex-col items-center max-w-2xl">
