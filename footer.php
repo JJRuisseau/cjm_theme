@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="mt-24 pb-6 text-center text-xs">
-                    <a href="<?php echo site_url('/mentions-legales'); ?>" class="lien-footer" title="Mentions légales du Cercle Jean Mermoz">Mentions légales</a> | Réalisé en 🇫🇷 et avec ❤️ par l'équipe du Cercle Jean Mermoz - 2022
+                    <a href="<?php echo site_url('/mentions-legales'); ?>" class="lien-footer" title="Mentions légales du Cercle Jean Mermoz">Mentions légales</a> | Réalisé en 🇫🇷 et avec ❤️ par l'équipe du Cercle Jean Mermoz - 2021
                 </div>
             </div>
         </footer>
